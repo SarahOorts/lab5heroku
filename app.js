@@ -3,7 +3,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 const routerMessages = require("./routes/api/v1/index");
 
-app.get('/', (req, res) => {
+app.get("/", (req, res) => {
     app.set('view engine', "pug");
 //   res.send('Hello World!')
   //homepage pug
