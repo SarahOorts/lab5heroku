@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "nodemon": "./node_modules/.bin/nodemon"
+    "nodemon": "nodemon"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -17,5 +17,18 @@
     "morgan": "~1.9.1",
     "nodemon": "^2.0.7",
     "pug": "^2.0.4"
-  }
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SarahOorts/lab5heroku.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SarahOorts/lab5heroku/issues"
+  },
+  "homepage": "https://github.com/SarahOorts/lab5heroku#readme",
+  "description": ""
 }

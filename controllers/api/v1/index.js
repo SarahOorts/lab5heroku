@@ -5,6 +5,11 @@ function getM(req, res){
         status : "succes",
         message : "GETTING messages",
     });
+
+    res.json({
+                status : "succes",
+                message : `GETTING message for username ${username}`,
+            }); 
 }
 
 function getMId(req, res){
@@ -53,22 +58,24 @@ function deleteId(req, res){
     }); 
   }
 
-  function getUsername(req, res){ 
-    //mongoDB return messages user
-    //req.params.username!!
-    //zonder mongoDB res  {“message”: “GETTING message for username username”}
-    let username = req.params.username;
+//   function getUsername(req, res){ 
+//     //mongoDB return messages user
+//     //req.params.username!!
+//     //zonder mongoDB res  {“message”: “GETTING message for username username”}
+//     let username = req.param("user");
+//     // let user = JSON.stringify(username); //https://www.codegrepper.com/code-examples/javascript/node+http+get+query+params
+//     // console.log(user); //https://expressjs.com/en/guide/routing.html
     
-    res.json({
-        status : "succes",
-        message : `GETTING message for username ${username}`,
-    }); 
+//     res.json({
+//         status : "succes",
+//         message : `GETTING message for username ${username}`,
+//     }); 
     
-  }
+//   }
 
 module.exports.getM = getM;
 module.exports.getMId = getMId;
 module.exports.postUser = postUser;
 module.exports.putId = putId;
 module.exports.deleteId = deleteId;
-module.exports.getUsername = getUsername;
+// module.exports.getUsername = getUsername;
