@@ -35,10 +35,10 @@ function postUser(req, res){
     // body { message: { “user”: “Pikachu”, “text”: “nodejs isn’t hard, or is it?” } }
     //zonder mongoDB res {“message”: “POSTING a new message for user Pikachu”}
     //naam dynamisch invullen + teruggeven
-    let user = req.params.user;
+    // let user = req.params.user;
     res.json({
         status : "succes",
-        message : `POSTING a new message for user ${user}`,
+        message : `POSTING a new message for user Pikachu`, //${user}
     });
 }
 
