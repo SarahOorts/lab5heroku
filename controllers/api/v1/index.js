@@ -1,15 +1,21 @@
 function getM(req, res){
     //mongoDB return messages
    // zonder mongoDB res { message : "GETTING messages"}
+   if(req.query.user != null){
+    let username = req.query.user;
+    console.log(username);
+    res.json({
+        status : "succes",
+        message : `GETTING message for username ${username}`,
+    });
+   } 
+   else{
+    
     res.json({
         status : "succes",
         message : "GETTING messages",
     });
-
-    res.json({
-                status : "succes",
-                message : `GETTING message for username ${username}`,
-            }); 
+   }    
 }
 
 function getMId(req, res){
