@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 const routerMessages = require("./routes/api/v1/index");
+const cors = require("cors");
+
+app.use(cors()); // request nr server zoals cors anywhere mr ingesteld op u server ipv and server
 
 app.get("/", (req, res) => {
     app.set('view engine', "pug");
